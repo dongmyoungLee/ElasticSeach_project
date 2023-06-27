@@ -8,8 +8,8 @@
        http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
     <!-- Enable @Controller-->
     <annotation-driven/>
-    <context:component-scan base-package="com.naver"/>
-    <!--    텀포넌트를 찾겠다. com.naver 속에서-->
+    <context:component-scan base-package="com.elastic"/>
+    <!--    텀포넌트를 찾겠다. com.elastic 속에서-->
     <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <beans:property name="prefix" value="/WEB-INF/views/"/>
         <beans:property name="suffix" value=".jsp"/>
