@@ -15,13 +15,9 @@ public class MyDataSearcher {
 
     @GetMapping("/signup")
     public String getpage(){
-          elasticService.search("shakespeare","speaker","IAGO");
+          elasticService.search("shakespeare","speaker","STER");
         return "signup";
-
-
     }
-  //@PostMapping()
-
 }
 
 
