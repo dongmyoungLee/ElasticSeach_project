@@ -20,7 +20,7 @@ public class ElasticService {
 
 
     public void search(String index, String field, String what) {
-        SearchResponse searchResponse = elasticTemplate.didYouMeanSuggestion(index, field, what);
+        SearchResponse searchResponse = elasticTemplate.matchFuzzinessKeyword(index, field, what);
 
         SearchHits searchHits = searchResponse.getHits();
 

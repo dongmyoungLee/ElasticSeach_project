@@ -15,11 +15,7 @@ public class MyDataSearcher {
 
     @GetMapping("/signup")
     public String getpage(){
-          elasticService.search("shakespeare","speaker","STER");
+          elasticService.search("petitions_*","content","비오는날");
         return "signup";
     }
 }
-
-
-
-    // 다른 기능들...

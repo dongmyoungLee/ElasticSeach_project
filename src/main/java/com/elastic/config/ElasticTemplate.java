@@ -26,7 +26,7 @@ public class ElasticTemplate {
         SearchRequest searchRequest = new SearchRequest(index);
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         searchSourceBuilder.query(QueryBuilders.matchQuery(field, what).fuzziness(Fuzziness.AUTO));
-        searchSourceBuilder.size(100); // 100개의 결과를 요청
+        searchSourceBuilder.size(10); // 100개의 결과를 요청
         searchRequest.source(searchSourceBuilder);
 
         return execute(searchRequest);
