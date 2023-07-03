@@ -223,8 +223,8 @@
         </div>
       </section>
       <section class="search_area">
-        <form action="/search" method="post" class="input_wrap">
-          <input placeholder="검색어를 입력하세요." class="search_input" type="text" />
+        <form action="/api/search" method="get" class="input_wrap">
+          <input placeholder="검색어를 입력하세요." class="search_input" type="text" name="keyword"/>
         </form>
       </section>
     </div>
