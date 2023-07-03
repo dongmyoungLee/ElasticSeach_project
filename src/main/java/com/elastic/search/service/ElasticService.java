@@ -20,10 +20,7 @@ public class ElasticService {
 
 
     public void search(String index, String field, String what) {
-
-//        RestHighLevelClient elasticsearchClient = ElasticsearchConfig.elasticsearchClient();
-
-        SearchResponse searchResponse = elasticTemplate.didYouMeanSearch(index, field, what);
+        SearchResponse searchResponse = elasticTemplate.matchFuzzinessKeyword(index, field, what);
 
         SearchHits searchHits = searchResponse.getHits();
 
@@ -37,8 +34,6 @@ public class ElasticService {
                 System.out.println("Field: " + key + ", Value: " + value);
             }
         }
-
-
     }
 
 }
