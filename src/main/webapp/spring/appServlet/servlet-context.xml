@@ -10,6 +10,7 @@
     <annotation-driven/>
     <context:component-scan base-package="com.elastic"/>
     <!--    텀포넌트를 찾겠다. com.elastic 속에서-->
+    <resources mapping="/resources/**" location="/resources/" />
     <beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <beans:property name="prefix" value="/WEB-INF/views/"/>
         <beans:property name="suffix" value=".jsp"/>
